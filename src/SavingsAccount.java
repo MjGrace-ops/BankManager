@@ -1,4 +1,3 @@
-package PACKAGE_NAME;
+public class SavingsAccount  extends BankAccount{
 
-public class SavingsAccount {
 }
