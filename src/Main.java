@@ -6,35 +6,34 @@ public class Main {
             SavingsAccount savings = new SavingsAccount();
             COD cod = new COD();
 
-            //Exemple
-            // Définir les attributs hérités
-            checking.account = "CHK-001";
+            //Exemple de Définition les attributs hérités
+            checking.account = "Check-001";
             checking.balance = 1500.00;
-            checking.limit = 500.00;
+            checking.limit = 3000.00;
 
-            savings.account = "SAV-001";
+            savings.account = "Save-001";
             savings.balance = 5000.00;
-            savings.interestRate = 2.5;
+            savings.tauxInteret = 2.5;
 
-            cod.account = "COD-001";
+            cod.account = "Cod-001";
             cod.balance = 10000.00;
-            cod.MaturityDate = "2026-12-31";
+            cod.echeance = "2026-12-31";
 
-            // Lire et afficher les attributs
-            System.out.println("=== Checking Account ===");
+            // Lecture et Affichage des attributs
+            System.out.println("=== CheckingAccount ===");
             System.out.println("Compte : " + checking.account);
             System.out.println("Solde  : " + checking.balance);
             System.out.println("Limite : " + checking.limit);
 
-            System.out.println("\n=== Savings Account ===");
+            System.out.println("\n=== SavingsAccount ===");
             System.out.println("Compte : " + savings.account);
             System.out.println("Solde  : " + savings.balance);
-            System.out.println("Taux   : " + savings.interestRate + "%");
+            System.out.println("Taux   : " + savings.tauxInteret + "%");
 
             System.out.println("\n=== COD ===");
             System.out.println("Compte   : " + cod.account);
             System.out.println("Solde    : " + cod.balance);
-            System.out.println("Échéance : " + cod.MaturityDate);
+            System.out.println("Échéance : " + cod.echeance);
         }
 
 
